@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/profh/67-442-F18/RxSwift-Class-Demos/README.md">
+   </FileRef>
+   <FileRef
+      location = "group:SubjectsPlayground.playground">
+   </FileRef>
+   <FileRef
+      location = "group:ObservablesPlayground.playground">
+   </FileRef>
+   <FileRef
+      location = "group:RxSwift-Class-Demos.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
