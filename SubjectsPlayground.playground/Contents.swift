@@ -168,8 +168,8 @@ example(of: "Managing UserSession w/ Variable") {
     .disposed(by: disposeBag)
   
   func logInWith(username: String, password: String, completion: (Error?) -> Void) {
-    guard username == "johnny@appleseed.com",
-      password == "appleseed"
+    guard username == "profh@cmu.edu",
+      password == "rxswift"
       else {
         completion(LoginError.invalidCredentials)
         return
@@ -195,9 +195,9 @@ example(of: "Managing UserSession w/ Variable") {
   }
   
   for i in 1...5 {
-    let password = i % 2 == 0 ? "appleseed" : "password"
+    let password = i % 2 == 0 ? "rxswift" : "password"
     
-    logInWith(username: "johnny@appleseed.com", password: password) { error in
+    logInWith(username: "profh@cmu.edu", password: password) { error in
       guard error == nil else {
         print(error!)
         return
@@ -209,5 +209,7 @@ example(of: "Managing UserSession w/ Variable") {
     performActionRequiringLoggedInUser {
       print("Successfully did something only a logged in user can do.")
     }
+    
+    logOut()
   }
 }
